@@ -39,6 +39,9 @@ const App = () => {
           <Text style={styles.buttonText}>Obter Imagens</Text>
         )}
       </Pressable>
+      <Pressable onPress={clearImages} style={styles.clearButton}>
+        <Text style={styles.buttonText}>Limpar Imagens</Text>
+      </Pressable>
       {error && <Text style={styles.errorText}>{error}</Text>}
       <ScrollView style={styles.scrollView}>
         {catImages.map((image, index) => (
